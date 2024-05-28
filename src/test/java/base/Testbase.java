@@ -41,9 +41,7 @@ public class Testbase
 			try {
 				fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\Properties\\config.properties");
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				// Mahendtra perpqjtoiwrhg
-				// thicisdbvbsd
+				
 				e.printStackTrace();
 				//System.out.println("hi ");
 				
