@@ -34,13 +34,7 @@ public class Testbase
 	public static Properties OR =  new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
-	@Test
-	public void loginAsBankManager() throws InterruptedException
-	{
-		driver.findElement(By.cssSelector(OR.getProperty("bmlgnbtn"))).click();
-		Thread.sleep(2000);
-		
-	}
+	
 	@BeforeSuite
 	public void setup() 
 	{
