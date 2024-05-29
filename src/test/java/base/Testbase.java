@@ -7,12 +7,14 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import dev.failsafe.Timeout;
 
@@ -32,7 +34,13 @@ public class Testbase
 	public static Properties OR =  new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
-
+	@Test
+	public void loginAsBankManager() throws InterruptedException
+	{
+		driver.findElement(By.cssSelector(OR.getProperty("bmlgnbtn"))).click();
+		Thread.sleep(2000);
+		
+	}
 	@BeforeSuite
 	public void setup() 
 	{
