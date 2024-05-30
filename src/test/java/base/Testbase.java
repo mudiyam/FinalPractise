@@ -36,7 +36,7 @@ public class Testbase
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	
 
-	//sai dheeraj mahendra
+	//sai dheeraj goud
 
 	@BeforeSuite
 	public void setup() 
